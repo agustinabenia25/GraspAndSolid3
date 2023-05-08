@@ -12,14 +12,11 @@ namespace Full_GRASP_And_SOLID.Library
     public class Recipe
     {
         private IList<Step> steps = new List<Step>();
-
         public Product FinalProduct { get; set; }
-
         public void AddStep(Step step)
         {
             this.steps.Add(step);
         }
-
         public void RemoveStep(Step step)
         {
             this.steps.Remove(step);
